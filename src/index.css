@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.pink-theme {
+   --primary-color: #E85382;
+}
+.blue-theme {
+   --primary-color:#39BADF;
+}
+.yellow-theme {
+   --primary-color: #E1A725;
+}
+
+body {
+   font-family: 'GeneralSans-Variable';
+}
+* {
+   min-width: 0;
+}
