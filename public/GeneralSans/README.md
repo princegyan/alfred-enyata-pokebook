@@ -2,38 +2,38 @@
 Follow these simple Steps.
 
 ## 1.
-Put `GeneralSan/` Folder into a Folder called `fonts/`.
+Put `GeneralSans/` Folder into a Folder called `fonts/`.
 
 ## 2.
-Put `GeneralSan.css` into your `css/` Folder.
+Put `GeneralSans.css` into your `css/` Folder.
 
 ## 3. (Optional)
-You may adapt the `url('path')` in `GeneralSan.css` depends on your ClashDisplaysite Filesystem.
+You may adapt the `url('path')` in `GeneralSans.css` depends on your ClashDisplaysite Filesystem.
 
 ## 4.
-Import `GeneralSan.css` at the top of you main Stylesheet.
+Import `GeneralSans.css` at the top of you main Stylesheet.
 
 ```
-@import url('GeneralSan.css');
+@import url('GeneralSans.css');
 ```
 
 ## 5.
 
 
 ```
-font-family: 'GeneralSans-Variable';
-font-family: 'GeneralSans-VariableItalic';
-font-family: 'GeneralSans-Extralight';
-font-family: 'GeneralSans-ExtralightItalic';
-font-family: 'GeneralSans-Light';
-font-family: 'GeneralSans-LightItalic';
-font-family: 'GeneralSans-Regular';
-font-family: 'GeneralSans-Italic';
-font-family: 'GeneralSans-Medium';
-font-family: 'GeneralSans-MediumItalic';
-font-family: 'GeneralSans-Semibold';
-font-family: 'GeneralSans-SemiboldItalic';
-font-family: 'GeneralSans-Bold';
-font-family: 'GeneralSans-BoldItalic';
+font-family: 'GeneralSanss-Variable';
+font-family: 'GeneralSanss-VariableItalic';
+font-family: 'GeneralSanss-Extralight';
+font-family: 'GeneralSanss-ExtralightItalic';
+font-family: 'GeneralSanss-Light';
+font-family: 'GeneralSanss-LightItalic';
+font-family: 'GeneralSanss-Regular';
+font-family: 'GeneralSanss-Italic';
+font-family: 'GeneralSanss-Medium';
+font-family: 'GeneralSanss-MediumItalic';
+font-family: 'GeneralSanss-Semibold';
+font-family: 'GeneralSanss-SemiboldItalic';
+font-family: 'GeneralSanss-Bold';
+font-family: 'GeneralSanss-BoldItalic';
 ```
 
