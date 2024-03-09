@@ -1,8 +1,6 @@
 import { useQueries, useQuery } from "@tanstack/react-query";
-// import { BASE_URL } from "../constants";
 import { PokemonCard, PokemonTypes } from "./PokemonCard";
 import { useEffect, useState } from "react";
-// import { getDominantColor } from "../utils";
 import { PokeType, getDominantColor, BASE_URL } from "../PokemonColorUtils";
 
 export function ViewPokemon({

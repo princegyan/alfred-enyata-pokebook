@@ -1,17 +1,17 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect,  useState } from "react";
 import { PokemonCard } from "../components/PokemonCard";
 import { ViewPokemon } from "../components/PokemonView";
-import { BASE_URL } from "../PokemonColorUtils.ts";
+import { BASE_URL } from "../PokemonColorUtils";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { ThemeModal } from "../components/ThemeModal";
-import { Pagination } from "../components/Pagination.tsx";
-import { CustomSelect } from "../components/CustomSelect.tsx";
+import { Pagination } from "../components/Pagination";
+import { CustomSelect } from "../components/CustomSelect";
 
 export function ListPokemon() {
-  const [selPoke, setSelPoke] = useState(null);
+  const [selPoke, setSelPoke] = useState<string | null>(null);
   const [pokePerPage, setPokePerPage] = useState(8);
-  const [pokePages, setPokePages] = useState([]);
+  const [pokePages, setPokePages] = useState<any[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [showThemeModal, setShowThemeModal] = useState(false);
   const { isPending, error, data } = useQuery({
@@ -31,7 +31,7 @@ export function ListPokemon() {
     }
   }, [data, pokePerPage]);
 
-  const handlePokePerPage = (option) => {
+  const handlePokePerPage = (option: number) => {
     const indexInView = (currentPage - 1) * pokePerPage;
     setPokePerPage(option);
     setCurrentPage(Math.floor(indexInView / option) + 1);
@@ -88,7 +88,7 @@ export function ListPokemon() {
           {isPending && <p>Loading...</p>}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
             {pokePages[currentPage - 1] &&
-              pokePages[currentPage - 1].map((pokemon) => (
+              pokePages[currentPage - 1].map((pokemon: any) => (
                 <PokemonCard
                   name={pokemon.name}
                   key={pokemon.name}

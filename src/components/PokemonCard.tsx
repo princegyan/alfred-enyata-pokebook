@@ -2,7 +2,6 @@ import { useQuery } from "@tanstack/react-query";
 
 import { BASE_URL, TYPE_EMOJI_MAP, PokeType } from "../PokemonColorUtils";
 import { useEffect, useState } from "react";
-// import { PokeType } from "../types";
 interface PokemonCardT {
   name: string;
   id: string;

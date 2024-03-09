@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 type NumPerPage = 8 | 12 | 16 | 20;
 

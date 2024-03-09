@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export function ThemeModal({ closeModal }: { closeModal: () => void }) {
   const handleThemeChange = (cls: `${"yellow" | "blue" | "pink"}-theme`) => {

@@ -1,19 +1,21 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// App.js
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { ListPokemon } from './pages/ListPokemon';
+import './index.css';
 
-import { Home } from "./pages/Home";
-import "./index.css";
-import { ListPokemon } from "./pages/ListPokemon.tsx";
-
-const router = createBrowserRouter([
+const routes = [
   {
-    path: "/",
+    path: '/',
     element: <Home />,
   },
   {
-    path: "/list-view",
+    path: '/list-view',
     element: <ListPokemon />,
   },
-]);
+];
+
+const router = createBrowserRouter(routes);
 
 function App() {
   return (
